@@ -15,7 +15,8 @@ keyword.addEventListener('keyup', function () {
         //4 berarti sumber sudah ready
         //status kalo 200 berarti sudah ok
         if (xhr.readyState == 4 && xhr.status == 200) {
-            console.log('ajax ok');
+            //ganti elemen yang idnya container, dengan isi dari sepatu.php
+            container.innerHTML = xhr.responseText;
         }
     };
 
@@ -23,12 +24,9 @@ keyword.addEventListener('keyup', function () {
     //parameter1 yaitu request metodnya apa
     //parameter2 yaitu  sumbernya dari mana
     //parameter3 yaitu true untuk asyn
-    xhr.open('GET', 'ajax/coba.txt', true);
+    xhr.open('GET', 'ajax/sepatu.php?keyword=' + keyword.value, true);
+    //dimana,  ?=keyword akan mengirimkan data berupa keyword.value atau data berupa input yang kita ketikkan dikeyboard
 
     //menjalankan ajax
     xhr.send();
-
-    //ini akan mengambil value dari keyword,
-    //dimana ini akan mengambil value dari apapun ketikan kita
-    keyword.value;
 });
