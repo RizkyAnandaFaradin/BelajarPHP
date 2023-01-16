@@ -7,6 +7,7 @@ var container = document.getElementById('container');
 //menambahkan function ketika kolom pencarian di tulis
 //keyup ketika kita selesai menekan tombol dikeyboard
 keyword.addEventListener('keyup', function () {
+    // --------------------ini adalah template buat ajax----------------
     //membuat object ajax
     var xhr = new XMLHttpRequest();
 
@@ -29,4 +30,5 @@ keyword.addEventListener('keyup', function () {
 
     //menjalankan ajax
     xhr.send();
+    // --------------------ini adalah template buat ajax----------------
 });
