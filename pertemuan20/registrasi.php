@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 
 //jika tombol register ditekan
 if (isset($_POST['register'])) {
    //jika nilai dari registrasi lebih dari 0, maka user berhasil ditambahkan
-   if (registrasi($_POST)>0) {
+   if (registrasi($_POST) > 0) {
       echo "<script>
              alert('User Berhasil diTambahkan');
              </script>";
-   } else{
+   } else {
       //tampilkan pesan error
       echo mysqli_error($conn);
    }
@@ -20,17 +20,19 @@ if (isset($_POST['register'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
-      input{
+      input {
          display: block;
       }
    </style>
    <title>Halaman Registrasi</title>
 </head>
+
 <body>
    <h1>
       Halaman Registrasi
@@ -38,24 +40,24 @@ if (isset($_POST['register'])) {
    <form action="" method="POST">
       <ul>
          <li>
-            <label for="username" >Username : </label>
+            <label for="username">Username : </label>
             <input type="text" name="username" id="username">
          </li>
 
 
          <li>
-            <label for="password" >Password : </label>
+            <label for="password">Password : </label>
             <input type="password" name="password" id="password">
          </li>
 
-         
+
          <li>
-            <label for="password2" >Konfirmasi Password : </label>
+            <label for="password2">Konfirmasi Password : </label>
             <input type="password" name="password2" id="password2">
          </li>
-    
+
          <li>
-         <button type="submit" name="register">Registrasi</button>
+            <button type="submit" name="register">Registrasi</button>
          </li>
 
          <li>
@@ -64,4 +66,5 @@ if (isset($_POST['register'])) {
       </ul>
    </form>
 </body>
+
 </html>

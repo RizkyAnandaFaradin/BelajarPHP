@@ -13,7 +13,7 @@ require 'functions.php';
 $id = $_GET["id"];
 
 $conn = mysqli_connect("localhost", "root", "", "phpsepatu"); 
-$sepatu = query("SELECT * FROM sepatu WHERE id = $id");
+$sepatu = query("SELECT * FROM sepatu WHERE id = '$id'");
 
 
 

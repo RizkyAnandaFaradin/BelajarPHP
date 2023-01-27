@@ -27,4 +27,3 @@ if (hapus($id)==null) {
       ";
   
   }
-?>

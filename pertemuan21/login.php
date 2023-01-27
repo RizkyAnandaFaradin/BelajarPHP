@@ -112,7 +112,7 @@ if (isset($error)) : ?>
       </li>
 
       <li>
-         <input type="checkbox" name="remember" id="remember>
+         <input type="checkbox" name="remember" id="remember">
          <label  for="remember">Remember Me</label>
 
       </li>
