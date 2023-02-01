@@ -25,7 +25,6 @@ class Sample
 
 class Dummy
 {
-
    function Info()
    {
       echo 'Dummy';

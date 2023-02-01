@@ -1,10 +1,10 @@
 <?php
 
-namespace helper\one;
+namespace DAY2\Namespace;
 
 class Conflict
 {
-   function info()
+   public function info()
    {
       echo "hAlo";
    }
