@@ -1,6 +1,5 @@
 <?php
 
-namespace DAY2\Namespace;
 
 class Conflict
 {
